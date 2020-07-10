@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.msiqbook"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="29" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 存取網路權限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 裝置不進入睡眠權限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 讀取檔案權限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.example.msiqlab.checkin_cheat_map"
+            android:label="@string/title_activity_checkin_cheat_map" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.msiqbook.dqa.com.msiqlab.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!-- android:networkSecurityConfig //android9.0以上因為安全協議的新增而必須要有這行才能上傳資料 -->
+
+        <activity android:name="com.example.msiqlab.welcome" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.msiqlab.login_main" />
+        <activity android:name="com.example.msiqlab.MainActivity" />
+        <activity android:name="com.example.msiqlab.news_page" />
+        <activity android:name="com.example.msiqlab.news_list" />
+        <activity android:name="com.example.msiqlab.news_message" />
+        <activity android:name="com.example.msiqlab.littlesupper_main" />
+        <activity android:name="com.example.msiqlab.qlab_lab_page" />
+        <activity android:name="com.example.msiqlab.qlab_booking_device" />
+        <activity android:name="com.example.msiqlab.qlab_tobooking" />
+        <activity android:name="com.example.msiqlab.qlab_tobooking_setdate" />
+        <activity android:name="com.example.msiqlab.qlab_booking_last" />
+        <activity android:name="com.example.msiqlab.qlab_certification" />
+        <activity android:name="com.example.msiqlab.qlab_laboratory_page" />
+        <activity android:name="com.example.msiqlab.qlab_laboratory_page_updata" />
+        <activity android:name="com.example.msiqlab.qlab_lab_visit" />
+        <activity android:name="com.example.msiqlab.video" />
+        <activity android:name="com.example.msiqlab.littlesupper_lab_inform" />
+        <activity android:name="com.example.msiqlab.checkin" />
+        <activity android:name="com.example.msiqlab.checkin2" />
+        <activity android:name="com.example.msiqlab.checkin_cheat" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

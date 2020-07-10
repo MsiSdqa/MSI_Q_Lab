@@ -1,0 +1,212 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.msiqbook"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml
+10
+11    <!--
+12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+13         Google Maps Android API v2, but you must specify either coarse or fine
+14         location permissions for the 'MyLocation' functionality.
+15    -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:11:5-79
+16-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:11:22-76
+17
+18    <!-- 存取網路權限 -->
+19    <uses-permission android:name="android.permission.INTERNET" /> <!-- 裝置不進入睡眠權限 -->
+19-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:14:5-67
+19-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:14:22-64
+20    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 讀取檔案權限 -->
+20-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:15:5-68
+20-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:15:22-65
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:16:5-81
+21-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:16:22-78
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:17:5-80
+22-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:17:22-77
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:18:5-81
+23-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:18:22-78
+24    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+24-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:19:5-89
+24-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:19:22-86
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:20:5-79
+25-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:20:22-76
+26    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+26-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:21:5-98
+26-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:21:22-95
+27
+28    <uses-feature
+28-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:22:5-78
+29        android:glEsVersion="0x00020000"
+29-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:22:19-51
+30        android:required="true" />
+30-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:22:52-75
+31
+32    <application
+32-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:24:5-94:19
+33        android:allowBackup="true"
+33-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:25:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.1.0] C:\Users\Albertchien\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+35        android:icon="@drawable/ic_launcher"
+35-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:26:9-45
+36        android:label="@string/app_name"
+36-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:27:9-41
+37        android:networkSecurityConfig="@xml/network_security_config"
+37-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:28:9-69
+38        android:roundIcon="@drawable/ic_launcher"
+38-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:29:9-50
+39        android:supportsRtl="true"
+39-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:30:9-35
+40        android:theme="@style/AppTheme" >
+40-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:31:9-40
+41
+42        <!--
+43             The API key for Google Maps-based APIs is defined as a string resource.
+44             (See the file "res/values/google_maps_api.xml").
+45             Note that the API key is linked to the encryption key used to sign the APK.
+46             You need a different API key for each encryption key, including the release key that is used to
+47             sign the APK for publishing.
+48             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+49        -->
+50        <meta-data
+50-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:41:9-43:55
+51            android:name="com.google.android.geo.API_KEY"
+51-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:42:13-58
+52            android:value="@string/google_maps_key" />
+52-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:43:13-52
+53        <meta-data
+53-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:44:9-46:69
+54            android:name="com.google.android.gms.version"
+54-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:45:13-58
+55            android:value="@integer/google_play_services_version" />
+55-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:46:13-66
+56
+57        <activity
+57-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:47:9-49:81
+58            android:name="com.example.msiqlab.checkin_cheat_map"
+58-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:48:13-46
+59            android:label="@string/title_activity_checkin_cheat_map" />
+59-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:49:13-69
+60
+61        <provider
+62            android:name="androidx.core.content.FileProvider"
+62-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:52:13-62
+63            android:authorities="com.example.msiqbook.dqa.com.msiqlab.fileprovider"
+63-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:53:13-80
+64            android:exported="false"
+64-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:54:13-37
+65            android:grantUriPermissions="true" >
+65-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:55:13-47
+66            <meta-data
+66-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:56:13-58:54
+67                android:name="android.support.FILE_PROVIDER_PATHS"
+67-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:57:17-67
+68                android:resource="@xml/file_paths" />
+68-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:58:17-51
+69        </provider>
+70        <!-- android:networkSecurityConfig //android9.0以上因為安全協議的新增而必須要有這行才能上傳資料 -->
+71
+72        <activity android:name="com.example.msiqlab.welcome" >
+72-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:63:9-69:20
+72-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:63:19-42
+73            <intent-filter>
+73-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:64:13-68:29
+74                <action android:name="android.intent.action.MAIN" />
+74-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:65:17-69
+74-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:65:25-66
+75
+76                <category android:name="android.intent.category.LAUNCHER" />
+76-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:67:17-77
+76-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:67:27-74
+77            </intent-filter>
+78        </activity>
+79        <activity android:name="com.example.msiqlab.login_main" />
+79-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:70:9-48
+79-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:70:19-45
+80        <activity android:name="com.example.msiqlab.MainActivity" />
+80-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:71:9-50
+80-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:71:19-47
+81        <activity android:name="com.example.msiqlab.news_page" />
+81-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:72:9-47
+81-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:72:19-44
+82        <activity android:name="com.example.msiqlab.news_list" />
+82-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:73:9-47
+82-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:73:19-44
+83        <activity android:name="com.example.msiqlab.news_message" />
+83-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:74:9-50
+83-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:74:19-47
+84        <activity android:name="com.example.msiqlab.littlesupper_main" />
+84-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:75:9-55
+84-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:75:19-52
+85        <activity android:name="com.example.msiqlab.qlab_lab_page" />
+85-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:76:9-51
+85-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:76:19-48
+86        <activity android:name="com.example.msiqlab.qlab_booking_device" />
+86-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:77:9-57
+86-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:77:19-54
+87        <activity android:name="com.example.msiqlab.qlab_tobooking" />
+87-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:78:9-52
+87-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:78:19-49
+88        <activity android:name="com.example.msiqlab.qlab_tobooking_setdate" />
+88-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:79:9-60
+88-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:79:19-57
+89        <activity android:name="com.example.msiqlab.qlab_booking_last" />
+89-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:80:9-55
+89-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:80:19-52
+90        <activity android:name="com.example.msiqlab.qlab_certification" />
+90-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:81:9-56
+90-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:81:19-53
+91        <activity android:name="com.example.msiqlab.qlab_laboratory_page" />
+91-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:82:9-58
+91-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:82:19-55
+92        <activity android:name="com.example.msiqlab.qlab_laboratory_page_updata" />
+92-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:83:9-65
+92-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:83:19-62
+93        <activity android:name="com.example.msiqlab.qlab_lab_visit" />
+93-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:84:9-52
+93-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:84:19-49
+94        <activity android:name="com.example.msiqlab.video" />
+94-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:85:9-43
+94-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:85:19-40
+95        <activity android:name="com.example.msiqlab.littlesupper_lab_inform" />
+95-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:86:9-61
+95-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:86:19-58
+96        <activity android:name="com.example.msiqlab.checkin" />
+96-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:87:9-45
+96-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:87:19-42
+97        <activity android:name="com.example.msiqlab.checkin2" />
+97-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:88:9-46
+97-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:88:19-43
+98        <activity android:name="com.example.msiqlab.checkin_cheat" />
+98-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:89:9-51
+98-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:89:19-48
+99
+100        <uses-library
+100-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:91:9-93:40
+101            android:name="org.apache.http.legacy"
+101-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:92:13-50
+102            android:required="false" />
+102-->C:\Users\Albertchien\AndroidStudioProjects\MSIQlab\app\src\main\AndroidManifest.xml:93:13-37
+103
+104        <activity
+104-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Albertchien\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+105            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+105-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Albertchien\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+106            android:exported="false"
+106-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Albertchien\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+107            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+107-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Albertchien\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+108    </application>
+109
+110</manifest>
